@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Levante Rivas · 23 especialidades médicas en un solo centro</title>
+<meta name="description" content="Centro médico privado en Rivas-Vaciamadrid. 23 especialidades coordinadas por un mismo equipo, cita en 48 h y 17 aseguradoras. Reserva tu Primera Visita 360 por 39 €.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Clínica Levante",
+  "url": "https://clinicalevanterivas.com/",
+  "telephone": "+34914994545",
+  "email": "info@grupomultisalud.es",
+  "openingHours": ["Mo-Fr 09:00-21:00", "Sa 09:00-14:00"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Antonio Muñoz Molina, 1",
+    "postalCode": "28521",
+    "addressLocality": "Rivas-Vaciamadrid",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  },
+  "medicalSpecialty": ["Dentistry","Pediatric","Psychiatric","Gynecologic","Cardiovascular","Dermatology","Neurologic","Otolaryngologic","PhysicalTherapy","Radiography"]
+}
+</script>
+<style>
+:root{
+  --ink:#0d2b33;
+  --ink-2:#38545b;
+  --muted:#6b8288;
+  --bg:#ffffff;
+  --bg-soft:#f3f8f7;
+  --bg-warm:#fbf6ef;
+  --line:#dde8e6;
+  --teal:#0f5c63;
+  --teal-2:#137a80;
+  --teal-soft:#e3f1ef;
+  --accent:#e8694a;
+  --accent-2:#d4552f;
+  --gold:#c9963b;
+  --ok:#1f8a5b;
+  --radius:18px;
+  --shadow:0 18px 50px -20px rgba(13,43,51,.28);
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);line-height:1.12;letter-spacing:-.015em;font-weight:600}
+h2{font-size:clamp(30px,4vw,46px)}
+h3{font-size:22px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-2)}
+.eyebrow::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.lead{font-size:19px;color:var(--ink-2)}
+.center{text-align:center}
+.section{padding:110px 0}
+.section-head{max-width:760px;margin:0 auto 56px;text-align:center}
+.section-head p{margin-top:16px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;padding:17px 28px;border-radius:999px;border:0;cursor:pointer;transition:transform .15s ease,box-shadow .2s ease,background .2s ease;font-family:inherit;text-align:center}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 14px 30px -12px rgba(232,105,74,.7)}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--teal)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-block{width:100%}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Top bar */
+.topbar{background:var(--ink);color:#cfe3e1;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:9px;padding-bottom:9px}
+.topbar strong{color:#fff}
+.topbar a:hover{color:#fff}
+.topbar .tb-right{display:flex;gap:22px}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+header.site.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--teal),var(--teal-2));display:grid;place-items:center;color:#fff;flex:none}
+.logo-mark svg{width:24px;height:24px}
+.logo-text{line-height:1.1}
+.logo-text b{font-family:var(--serif);font-size:21px;font-weight:600;display:block}
+.logo-text small{font-size:11.5px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.menu{display:flex;gap:30px;font-weight:600;font-size:15px;color:var(--ink-2)}
+.menu a:hover{color:var(--teal)}
+.nav-cta{display:flex;gap:12px;align-items:center}
+.nav-cta .btn{padding:13px 22px;font-size:15px}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger svg{width:28px;height:28px}
+
+/* Hero */
+.hero{position:relative;background:linear-gradient(180deg,var(--bg-soft),#fff 85%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;padding-top:70px;padding-bottom:90px}
+.pill{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:8px 16px 8px 8px;border-radius:999px;font-size:14px;font-weight:600;color:var(--ink-2);box-shadow:0 6px 18px -10px rgba(13,43,51,.25)}
+.pill span.tag{background:var(--accent);color:#fff;padding:4px 10px;border-radius:999px;font-size:12px;letter-spacing:.04em}
+.hero h1{font-size:clamp(40px,5.6vw,68px);margin:24px 0 22px}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero .lead{max-width:560px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 30px}
+.hero-checks{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:15px;font-weight:600;color:var(--ink-2)}
+.hero-checks span{display:inline-flex;align-items:center;gap:8px}
+.hero-checks svg{width:20px;height:20px;color:var(--ok)}
+.hero-visual{position:relative}
+.hero-img{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/4.4}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.float-card{position:absolute;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:16px 18px;display:flex;gap:12px;align-items:center;font-size:14px}
+.float-card b{display:block;font-size:15px}
+.float-card .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none}
+.float-card .ic svg{width:22px;height:22px}
+.fc-1{left:-34px;bottom:56px}
+.fc-1 .ic{background:var(--teal-soft);color:var(--teal)}
+.fc-2{right:-20px;top:40px}
+.fc-2 .ic{background:#fdebe5;color:var(--accent)}
+
+/* Stats */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 20px;text-align:center;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{font-family:var(--serif);font-size:44px;color:var(--teal);display:block;line-height:1}
+.stat span{font-size:14.5px;color:var(--ink-2);font-weight:600;display:block;margin-top:8px}
+
+/* Insurers strip */
+.insurers{padding:46px 0;background:#fff}
+.insurers p{text-align:center;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
+.marquee{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee-track{display:flex;gap:46px;width:max-content;animation:scroll 45s linear infinite}
+.marquee-track img{height:46px;width:auto;filter:grayscale(1);opacity:.7;transition:.2s;mix-blend-mode:multiply}
+.marquee-track img:hover{filter:none;opacity:1}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* Problem */
+.problem{background:var(--bg-warm)}
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pain{background:#fff;border-radius:var(--radius);padding:32px;border:1px solid #f0e6d8}
+.pain .num{font-family:var(--serif);font-size:15px;color:var(--accent);font-weight:700;letter-spacing:.06em}
+.pain h3{margin:10px 0 10px}
+.pain p{color:var(--ink-2);font-size:16px}
+.problem-close{max-width:780px;margin:52px auto 0;text-align:center;font-family:var(--serif);font-size:clamp(24px,3vw,32px);line-height:1.3}
+.problem-close em{color:var(--teal);font-style:italic}
+
+/* Method */
+.method-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.method-img{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1/1.05}
+.method-img img{width:100%;height:100%;object-fit:cover}
+.steps{margin-top:34px;display:grid;gap:18px}
+.step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px;border-radius:var(--radius);border:1px solid var(--line);background:#fff;transition:.2s}
+.step:hover{border-color:var(--teal-2);box-shadow:0 12px 30px -18px rgba(15,92,99,.5)}
+.step .n{width:56px;height:56px;border-radius:16px;background:var(--teal);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:24px;font-weight:600}
+.step h3{font-size:20px;margin-bottom:4px}
+.step p{color:var(--ink-2);font-size:16px}
+.case{margin-top:26px;background:var(--teal-soft);border-radius:var(--radius);padding:22px 24px;font-size:15.5px;color:var(--ink-2)}
+.case b{color:var(--teal)}
+
+/* Offer */
+.offer{background:linear-gradient(160deg,#0b3d43,#0d2b33 60%);color:#e7f2f0;position:relative;overflow:hidden}
+.offer::before{content:"";position:absolute;inset:auto -200px -260px auto;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(232,105,74,.28),transparent 65%)}
+.offer .eyebrow{color:#7fd1c8}
+.offer h2{color:#fff}
+.offer .lead{color:#b9d4d1}
+.offer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start;position:relative}
+.stack{margin-top:34px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:22px;overflow:hidden}
+.stack-row{display:grid;grid-template-columns:28px 1fr auto;gap:14px;align-items:start;padding:18px 24px;border-bottom:1px solid rgba(255,255,255,.08)}
+.stack-row svg{width:24px;height:24px;color:#7fd1c8;margin-top:2px}
+.stack-row b{color:#fff;display:block;font-size:16.5px}
+.stack-row small{color:#9fbebb;font-size:14.5px}
+.stack-row .val{color:#9fbebb;font-weight:600;white-space:nowrap;text-decoration:line-through;text-decoration-color:rgba(232,105,74,.8)}
+.stack-row.bonus b{color:#ffd29a}
+.stack-total{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:rgba(255,255,255,.06);font-weight:700}
+.stack-total s{color:#9fbebb;font-size:20px}
+.guarantee{margin-top:26px;display:flex;gap:18px;align-items:center;background:rgba(201,150,59,.12);border:1px dashed rgba(201,150,59,.6);border-radius:18px;padding:20px 22px}
+.seal{width:74px;height:74px;flex:none;border-radius:50%;background:var(--gold);color:#1d1606;display:grid;place-items:center;text-align:center;font-weight:800;font-size:11px;line-height:1.1;letter-spacing:.04em;box-shadow:0 0 0 5px rgba(201,150,59,.25)}
+.guarantee b{color:#fff;font-size:17px}
+.guarantee p{font-size:15px;color:#d8c9a8}
+
+.offer-card{background:#fff;color:var(--ink);border-radius:26px;padding:34px;box-shadow:0 30px 70px -25px rgba(0,0,0,.6);position:sticky;top:110px}
+.ribbon{display:inline-block;background:#fdebe5;color:var(--accent-2);font-weight:800;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.offer-card h3{font-size:28px;margin:14px 0 6px}
+.price{display:flex;align-items:baseline;gap:14px;margin:16px 0 4px}
+.price b{font-family:var(--serif);font-size:64px;line-height:1;color:var(--ink)}
+.price s{color:var(--muted);font-size:22px}
+.price-note{font-size:14px;color:var(--muted)}
+.seats{margin:20px 0 22px;font-size:14px;font-weight:600;color:var(--ink-2)}
+.bar{height:9px;border-radius:9px;background:var(--line);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;width:73%;background:linear-gradient(90deg,var(--accent),#f0a04b);border-radius:9px}
+form .field{margin-bottom:12px}
+form label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px;color:var(--ink-2)}
+form input,form select,form textarea{width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);font:inherit;font-size:16px;color:var(--ink);background:#fff;transition:border-color .15s}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--teal-2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.legal-check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin:6px 0 16px}
+.legal-check input{width:18px;height:18px;margin-top:2px;flex:none}
+.form-foot{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+.form-ok{display:none;text-align:center;padding:30px 10px}
+.form-ok .tick{width:68px;height:68px;border-radius:50%;background:#e1f4ea;color:var(--ok);display:grid;place-items:center;margin:0 auto 16px}
+.form-ok .tick svg{width:34px;height:34px}
+
+/* Specialties */
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:38px}
+.tab{background:#fff;border:1.5px solid var(--line);color:var(--ink-2);padding:10px 18px;border-radius:999px;font-weight:700;font-size:14.5px;cursor:pointer;font-family:inherit;transition:.15s}
+.tab:hover{border-color:var(--teal-2)}
+.tab.active{background:var(--teal);border-color:var(--teal);color:#fff}
+.spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.spec{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s;display:flex;flex-direction:column;gap:8px}
+.spec:hover{border-color:var(--teal-2);transform:translateY(-3px);box-shadow:0 16px 32px -20px rgba(15,92,99,.5)}
+.spec .ic{width:44px;height:44px;border-radius:12px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center}
+.spec .ic svg{width:22px;height:22px}
+.spec h3{font-family:var(--sans);font-size:16.5px;font-weight:700;letter-spacing:0}
+.spec p{font-size:14.5px;color:var(--muted);line-height:1.5}
+.spec.hidden{display:none}
+.spec-cta{margin-top:40px;text-align:center;color:var(--ink-2)}
+.spec-cta a{color:var(--teal);font-weight:700;border-bottom:2px solid currentColor}
+
+/* Featured services */
+.featured{background:var(--bg-soft)}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat{background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.feat-img{aspect-ratio:16/10;overflow:hidden}
+.feat-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.feat:hover .feat-img img{transform:scale(1.05)}
+.feat-body{padding:26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.feat-body .tagline{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-2)}
+.feat-body ul{list-style:none;display:grid;gap:7px;font-size:15px;color:var(--ink-2)}
+.feat-body li{display:flex;gap:9px}
+.feat-body li::before{content:"✓";color:var(--ok);font-weight:800}
+.feat-body .btn{margin-top:auto;padding:13px 20px;font-size:15px}
+
+/* Plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.plan{border:1.5px solid var(--line);border-radius:24px;padding:34px 30px;display:flex;flex-direction:column;background:#fff;position:relative}
+.plan.best{border-color:var(--teal);box-shadow:var(--shadow);transform:scale(1.03)}
+.plan .badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:999px;white-space:nowrap}
+.plan h3{font-size:24px}
+.plan .who{color:var(--muted);font-size:15px;margin-top:4px}
+.plan .p{margin:22px 0 4px;display:flex;align-items:baseline;gap:6px}
+.plan .p b{font-family:var(--serif);font-size:54px;line-height:1}
+.plan .p span{color:var(--muted);font-weight:600}
+.plan .save{font-size:14px;color:var(--ok);font-weight:700;margin-bottom:20px}
+.plan ul{list-style:none;display:grid;gap:11px;margin-bottom:28px;font-size:15.5px;color:var(--ink-2)}
+.plan li{display:flex;gap:10px}
+.plan li svg{width:20px;height:20px;color:var(--teal-2);flex:none;margin-top:2px}
+.plan .btn{margin-top:auto}
+.plans-note{text-align:center;margin-top:36px;color:var(--muted);font-size:15px}
+
+/* Authority */
+.authority{background:var(--bg-warm)}
+.auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.team figure{border-radius:18px;overflow:hidden;aspect-ratio:3/4;position:relative}
+.team figure:nth-child(2){transform:translateY(34px)}
+.team img{width:100%;height:100%;object-fit:cover}
+.creds{display:grid;gap:16px;margin-top:30px}
+.cred{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:16px;padding:18px 20px;border:1px solid #f0e6d8}
+.cred .ic{width:46px;height:46px;border-radius:12px;background:#f7ecd9;color:#9a6c1c;display:grid;place-items:center;flex:none}
+.cred .ic svg{width:24px;height:24px}
+.cred b{display:block;font-size:16.5px}
+.cred p{font-size:15px;color:var(--ink-2)}
+blockquote.doctor{margin-top:28px;font-family:var(--serif);font-size:21px;line-height:1.45;color:var(--ink);border-left:3px solid var(--gold);padding-left:22px;font-style:italic}
+blockquote.doctor cite{display:block;margin-top:10px;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--muted);font-weight:600}
+
+/* Testimonials */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.testi{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px}
+.stars{color:#f2a93b;letter-spacing:2px;font-size:18px}
+.testi p{font-size:16px;color:var(--ink-2)}
+.testi .who{display:flex;gap:12px;align-items:center;margin-top:auto}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;font-weight:800}
+.testi .who b{display:block;font-size:15px}
+.testi .who small{color:var(--muted);font-size:13.5px}
+.demo-note{display:inline-block;margin-top:26px;font-size:13px;color:var(--muted);background:var(--bg-soft);padding:6px 12px;border-radius:8px}
+
+/* Insurers grid */
+.ins-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.ins-grid div{background:#fff;border:1px solid var(--line);border-radius:14px;height:86px;display:grid;place-items:center;padding:12px}
+.ins-grid img{max-height:52px;width:auto;mix-blend-mode:multiply}
+
+/* FAQ */
+.faq{max-width:840px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-weight:700;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;line-height:1;color:var(--teal);transition:transform .2s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:12px;color:var(--ink-2);font-size:16px}
+
+/* Final CTA + contact */
+.final{background:var(--teal);color:#fff;border-radius:32px;padding:70px 56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.final::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:rgba(255,255,255,.07)}
+.final h2{color:#fff}
+.final p{color:#cfe9e6;margin-top:14px;font-size:18px}
+.final .actions{display:grid;gap:12px;position:relative;z-index:1}
+.final .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:70px}
+.contact-info{display:grid;gap:14px;align-content:start}
+.ci{display:flex;gap:14px;align-items:center;padding:18px 20px;border:1px solid var(--line);border-radius:16px}
+.ci .ic{width:44px;height:44px;border-radius:12px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;flex:none}
+.ci .ic svg{width:22px;height:22px}
+.ci small{display:block;color:var(--muted);font-size:13px;font-weight:600}
+.ci b{font-size:16.5px}
+.hours{padding:20px;border:1px solid var(--line);border-radius:16px}
+.hours-head{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.hours-head .ic{width:44px;height:44px;border-radius:12px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;flex:none}
+.hours-head .ic svg{width:22px;height:22px}
+.hours-head small{display:block;color:var(--muted);font-size:13px;font-weight:600}
+.hours ul{list-style:none}
+.hours li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.hours li:last-child{border-bottom:0}
+.hours li span:last-child{font-weight:700}
+.hours li.today{color:var(--teal)}
+.hours li.today span:first-child{font-weight:800}
+.hours li.closed span:last-child{color:var(--muted);font-weight:600}
+.open-status::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:8px;background:var(--muted);vertical-align:1px}
+.open-status.is-open::before{background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.2)}
+.open-status.is-closed::before{background:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:12px;padding:8px 12px;font:inherit;font-size:14px;font-weight:700;color:var(--ink-2);cursor:pointer;line-height:1.2;text-align:center;transition:.15s}
+.chip small{display:block;font-size:11.5px;font-weight:600;color:var(--muted);text-transform:capitalize}
+.chip:hover{border-color:var(--teal-2)}
+.chip[aria-checked="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.chip[aria-checked="true"] small{color:#cfe9e6}
+.slots{max-height:132px;overflow-y:auto;padding-right:4px}
+.slots .chip{padding:8px 10px;min-width:64px}
+.slot-hint{font-size:13px;color:var(--muted)}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0}
+
+footer{background:var(--ink);color:#a9c3c0;padding:64px 0 120px;margin-top:110px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+footer h4{color:#fff;font-size:15px;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:#fff}
+footer .logo-text b{color:#fff}
+.foot-legal{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13.5px}
+
+/* Sticky mobile bar + WhatsApp */
+.mbar{display:none}
+.wa{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(37,211,102,.7);z-index:60;transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px}
+
+/* Mobile menu */
+.mmenu{display:none;position:fixed;inset:0;background:#fff;z-index:100;padding:24px;flex-direction:column;gap:6px}
+.mmenu.open{display:flex}
+.mmenu a{font-size:22px;font-weight:700;padding:14px 0;border-bottom:1px solid var(--line)}
+.mmenu .close{align-self:flex-end;background:none;border:0;font-size:34px;cursor:pointer;line-height:1}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.marquee-track{animation:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:1080px){
+  .menu{display:none}
+  .burger{display:block}
+  .nav-cta .btn-ghost{display:none}
+  .spec-grid{grid-template-columns:repeat(3,1fr)}
+  .ins-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:900px){
+  .section{padding:80px 0}
+  .hero .wrap,.method-grid,.offer-grid,.auth-grid,.final,.contact-grid{grid-template-columns:1fr}
+  .hero .wrap{padding-top:40px;padding-bottom:60px;gap:40px}
+  .fc-1{left:12px;bottom:18px}
+  .fc-2{right:12px;top:18px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .pains,.feat-grid,.testi-grid,.plans{grid-template-columns:1fr}
+  .plan.best{transform:none}
+  .offer-card{position:static}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .final{padding:48px 28px}
+  .topbar .tb-right{display:none}
+  .method-img{aspect-ratio:16/11}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .spec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .spec{padding:18px 16px}
+  .spec h3{overflow-wrap:anywhere;hyphens:auto;font-size:15.5px}
+  .ins-grid{grid-template-columns:repeat(3,1fr)}
+  .two{grid-template-columns:1fr}
+  .hero-ctas .btn{width:100%}
+  .nav-cta .btn{display:none}
+  .stat b{font-size:36px}
+  .offer-card{padding:26px 20px}
+  .stack-row{padding:16px;grid-template-columns:24px 1fr}
+  .stack-row .val{grid-column:2}
+  .foot-grid{grid-template-columns:1fr}
+  .team figure:nth-child(2){transform:none}
+  .mbar{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;position:fixed;left:0;right:0;bottom:0;background:#fff;padding:10px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -10px rgba(13,43,51,.3);z-index:70}
+  .mbar .btn{padding:14px 10px;font-size:15px}
+  .wa{bottom:86px;right:14px;width:54px;height:54px}
+  .float-card{padding:12px 14px;font-size:13px}
+  .float-card .ic{width:34px;height:34px}
+  .topbar .wrap{justify-content:center;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 19a1.5 1.5 0 0 0 1.3 2h12.4a1.5 1.5 0 0 0 1.3-2L14 9V3"/><path d="M7 15h10"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a5 5 0 0 0 10 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></symbol>
+    <symbol id="i-tooth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5C10.5 4 8 3 6 4S3 8 4 11c.8 2.4 1.2 5 1.6 7.6.3 1.7 2.6 1.9 3 .2L10 15c.4-1.4 3.6-1.4 4 0l1.4 3.8c.4 1.7 2.7 1.5 3-.2.4-2.6.8-5.2 1.6-7.6 1-3 0-6-2-7s-4.5 0-6 1.5z"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 0 7 4.5v.1A3 3 0 0 0 4.5 9a3 3 0 0 0 .5 5.5A3 3 0 0 0 9 19.5a2.5 2.5 0 0 0 3 2V4a2 2 0 0 0-2.5-2zM14.5 2A2.5 2.5 0 0 1 17 4.5v.1A3 3 0 0 1 19.5 9a3 3 0 0 1-.5 5.5 3 3 0 0 1-4 5 2.5 2.5 0 0 1-3 2"/></symbol>
+    <symbol id="i-bone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10c.7-.7 1.7-.7 2.5 0a2.1 2.1 0 0 0 1-3.5 2.1 2.1 0 0 0-3.5-1C16.3 4.7 16.3 3.7 17 3a2.1 2.1 0 0 0-3 0c-1.2 1.2-1.2 3 0 4.2L7.2 14c-1.2-1.2-3-1.2-4.2 0a2.1 2.1 0 0 0 0 3c.7-.7 1.7-.7 2.5 0a2.1 2.1 0 0 0 1 3.5 2.1 2.1 0 0 0 3.5 1c.7.7.7 1.7 0 2.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.8L20 10l-5 3.6 1.8 6.4-4.8-3.8L7.2 20 9 13.6 4 10l6.1-1.2z"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M3 17v-4l2-5h14l2 5v4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></symbol>
+    <symbol id="i-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0M10 7h.01M14 7h.01"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>🎁 <strong>Primera Visita 360 por 39 €</strong> · solo 30 plazas en noviembre</div>
+    <div class="tb-right">
+      <a href="#horario" class="open-status" data-status></a>
+      <a href="tel:+34914994545">📞 91 499 45 45</a>
+      <span>📍 C/ Antonio Muñoz Molina, 1 · Rivas</span>
+    </div>
+  </div>
+</div>
+
+<header class="site" id="top">
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Clínica Levante, inicio">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+      <span class="logo-text"><b>Clínica Levante</b><small>Centro médico · Rivas</small></span>
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#metodo">Método 360</a>
+      <a href="#especialidades">Especialidades</a>
+      <a href="#plan-familia">Plan Familia</a>
+      <a href="#seguros">Seguros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+34914994545" class="btn btn-ghost"><svg><use href="#i-phone"/></svg>91 499 45 45</a>
+      <a href="#oferta" class="btn btn-primary">Pedir cita</a>
+      <button class="burger" aria-label="Abrir menú" id="burger"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <button class="close" aria-label="Cerrar menú" id="mclose">×</button>
+  <a href="#metodo">Método 360</a>
+  <a href="#especialidades">Especialidades</a>
+  <a href="#plan-familia">Plan Familia</a>
+  <a href="#seguros">Seguros</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#oferta" class="btn btn-primary" style="margin-top:20px;border:0;font-size:18px">Reservar Primera Visita 360</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><span class="tag">NUEVO</span> Método Levante 360 · un equipo, un plan</span>
+      <h1>Toda la salud de tu familia, <em>en una sola clínica</em> de Rivas.</h1>
+      <p class="lead">23 especialidades bajo el mismo techo y un equipo que <strong>se habla entre sí</strong>. Se acabó ir de una consulta a otra repitiendo tu historia: aquí te vemos entero, te damos un plan claro y lo seguimos contigo.</p>
+      <div class="hero-ctas">
+        <a href="#oferta" class="btn btn-primary"><svg><use href="#i-cal"/></svg>Reservar mi Primera Visita 360 · 39 €</a>
+        <a href="tel:+34914994545" class="btn btn-ghost"><svg><use href="#i-phone"/></svg>Llamar ahora</a>
+      </div>
+      <div class="hero-checks">
+        <span><svg><use href="#i-check"/></svg>Cita en 48 h garantizada</span>
+        <span><svg><use href="#i-check"/></svg>5,0 ★ en Doctoralia</span>
+        <span><svg><use href="#i-check"/></svg>17 aseguradoras</span>
+        <span><svg><use href="#i-check"/></svg>Laboratorio y radiología propios</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1100&q=75&auto=format&fit=crop" alt="Doctora de Clínica Levante explicando resultados a una paciente" fetchpriority="high">
+      </div>
+      <div class="float-card fc-1">
+        <span class="ic"><svg><use href="#i-users"/></svg></span>
+        <div><b>23 especialidades</b>coordinadas en un mismo plan</div>
+      </div>
+      <div class="float-card fc-2">
+        <span class="ic"><svg><use href="#i-clock"/></svg></span>
+        <div><b>Cita en 48 h</b>o la consulta es gratis</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" aria-label="Datos de la clínica">
+  <div class="wrap">
+    <div class="stat"><b data-count="23">23</b><span>especialidades médicas</span></div>
+    <div class="stat"><b data-count="17">17</b><span>aseguradoras concertadas</span></div>
+    <div class="stat"><b>48 h</b><span>plazo máximo de cita</span></div>
+    <div class="stat"><b>5,0<small style="font-size:.5em;color:#f2a93b"> ★</small></b><span>en Doctoralia · 41 opiniones</span></div>
+  </div>
+</section>
+
+<!-- INSURERS MARQUEE -->
+<section class="insurers" aria-label="Aseguradoras">
+  <p>Trabajamos con tu seguro privado</p>
+  <div class="marquee">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">¿Te suena?</span>
+      <h2>Cuidar la salud de una familia no debería ser un trabajo a tiempo completo</h2>
+    </div>
+    <div class="pains">
+      <div class="pain reveal">
+        <span class="num">01</span>
+        <h3>Semanas esperando cita</h3>
+        <p>Llamas, te dan fecha para dentro de un mes y mientras tanto el problema sigue ahí. O peor, va a más.</p>
+      </div>
+      <div class="pain reveal">
+        <span class="num">02</span>
+        <h3>Un médico en cada punta de Madrid</h3>
+        <p>El dentista en un sitio, el fisio en otro, el pediatra en otro. Cada uno con su historia y ninguno ve el cuadro completo.</p>
+      </div>
+      <div class="pain reveal">
+        <span class="num">03</span>
+        <h3>Tratas el síntoma, no la causa</h3>
+        <p>Te duele la mandíbula, te ponen una férula y sigues igual. Porque nadie miró que el origen era el estrés.</p>
+      </div>
+    </div>
+    <p class="problem-close reveal">En Clínica Levante lo hacemos al revés: <em>un único equipo médico</em> que te conoce, se coordina y va a la raíz del problema.</p>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="section" id="metodo">
+  <div class="wrap method-grid">
+    <div class="method-img reveal">
+      <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1000&q=75&auto=format&fit=crop" alt="Especialistas de Clínica Levante revisando un caso juntos" loading="lazy">
+    </div>
+    <div>
+      <span class="eyebrow">El Método Levante 360</span>
+      <h2>Un equipo. Un plan. Una sola clínica.</h2>
+      <p class="lead" style="margin-top:16px">Nuestro sistema para que cada paciente salga con respuestas, no con más dudas.</p>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="n">1</span>
+          <div><h3>Te vemos entero</h3><p>Primera visita con médico de familia y revisión dental. Escuchamos todo: síntomas, hábitos, estrés, sueño.</p></div>
+        </div>
+        <div class="step reveal">
+          <span class="n">2</span>
+          <div><h3>El equipo se coordina</h3><p>Si hace falta, tu caso se comparte con el especialista adecuado: fisio, psicología, cardiología, ginecología… sin que tengas que volver a contarlo.</p></div>
+        </div>
+        <div class="step reveal">
+          <span class="n">3</span>
+          <div><h3>Plan claro y seguimiento</h3><p>Te llevas por escrito qué hacer, quién te atiende y cuándo. Y te llamamos para ver cómo vas.</p></div>
+        </div>
+      </div>
+      <div class="case reveal"><b>Ejemplo real de cómo trabajamos:</b> el bruxismo (apretar los dientes) casi siempre nace del estrés. Por eso lo tratamos entre odontología, fisioterapia, logopedia y psicología a la vez, no solo con una férula.</div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="section offer" id="oferta">
+  <div class="wrap offer-grid">
+    <div>
+      <span class="eyebrow">Oferta de bienvenida · Noviembre</span>
+      <h2>Primera Visita 360: tu salud completa revisada en una mañana</h2>
+      <p class="lead" style="margin-top:16px">Todo lo que necesitas para saber cómo estás y qué hacer a partir de ahora. Por menos de lo que cuesta una consulta normal.</p>
+
+      <div class="stack">
+        <div class="stack-row"><svg><use href="#i-steth"/></svg><div><b>Consulta completa con médico de familia</b><small>45 minutos, historia clínica y exploración</small></div><span class="val">60 €</span></div>
+        <div class="stack-row"><svg><use href="#i-tooth"/></svg><div><b>Revisión dental con diagnóstico</b><small>Exploración por odontólogo y presupuesto sin compromiso</small></div><span class="val">50 €</span></div>
+        <div class="stack-row"><svg><use href="#i-heart"/></svg><div><b>Control básico de salud</b><small>Tensión arterial, glucosa capilar, peso e IMC</small></div><span class="val">25 €</span></div>
+        <div class="stack-row"><svg><use href="#i-cal"/></svg><div><b>Plan de Salud 360 por escrito</b><small>Qué hacer, con quién y cuándo, coordinado por el equipo</small></div><span class="val">30 €</span></div>
+        <div class="stack-row bonus"><svg><use href="#i-baby"/></svg><div><b>REGALO: revisión dental gratis para tus hijos</b><small>Para los menores de 14 años que vengan contigo ese día</small></div><span class="val">45 €</span></div>
+        <div class="stack-row bonus"><svg><use href="#i-spark"/></svg><div><b>REGALO: 10 % en tu primer tratamiento</b><small>Válido 30 días en cualquier especialidad</small></div><span class="val">—</span></div>
+        <div class="stack-total"><span>Valor total</span><s>210 €</s></div>
+      </div>
+
+      <div class="guarantee">
+        <div class="seal">DOBLE<br>GARANTÍA</div>
+        <div>
+          <b>Cita en 48 h o tu visita es gratis.</b>
+          <p>Y si sales sin un plan claro de qué hacer, te devolvemos los 39 €. Sin preguntas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-card" id="reserva">
+      <div id="form-wrap">
+        <span class="ribbon">Ahorras 171 €</span>
+        <h3>Reserva tu Primera Visita 360</h3>
+        <div class="price"><b>39 €</b><s>210 €</s></div>
+        <p class="price-note">¿Tienes seguro privado? Te confirmamos si la consulta está cubierta.</p>
+        <div class="seats">Plazas de noviembre: <strong>22 de 30 reservadas</strong><div class="bar"><i></i></div></div>
+        <form id="lead-form" novalidate>
+          <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" required autocomplete="name" placeholder="Tu nombre"></div>
+          <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" required autocomplete="tel" placeholder="600 000 000"></div>
+          <div class="field"><label>Elige día</label><div class="chips" id="day-chips" role="radiogroup" aria-label="Día de la cita"></div></div>
+          <div class="field"><label>Elige hora</label><div class="chips slots" id="slot-chips" role="radiogroup" aria-label="Hora de la cita"></div></div>
+          <input type="hidden" name="cita" id="f-cita">
+          <div class="field"><label for="f-ins">¿Tienes seguro?</label><select id="f-ins" name="seguro"><option>No, soy paciente privado</option><option>Sí, Adeslas</option><option>Sí, Asisa</option><option>Sí, DKV</option><option>Sí, Mapfre</option><option>Sí, Sanitas / otro</option></select></div>
+          <label class="legal-check"><input type="checkbox" required id="f-legal"> Acepto la política de privacidad y que me llaméis para confirmar la cita.</label>
+          <button class="btn btn-primary btn-block" type="submit">Quiero mi plaza por 39 €</button>
+          <p class="form-foot">🔒 Reserva online 24 h · te confirmamos por teléfono</p>
+        </form>
+      </div>
+      <div class="form-ok" id="form-ok">
+        <div class="tick"><svg><use href="#i-check"/></svg></div>
+        <h3>¡Plaza reservada!</h3>
+        <p style="margin-top:8px;font-weight:700;color:var(--teal);text-transform:capitalize" id="ok-when"></p>
+        <p style="color:var(--ink-2);margin-top:8px">Te llamamos en menos de 2 horas laborables para confirmarla. Si lo prefieres, llámanos tú al <a href="tel:+34914994545" style="color:var(--teal);font-weight:700">91 499 45 45</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALTIES -->
+<section class="section" id="especialidades">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">23 especialidades</span>
+      <h2>Todo lo que tu familia necesita, sin salir de Rivas</h2>
+      <p class="lead">De la revisión del niño al psicotécnico del carnet. Un solo historial, un solo equipo.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-filter="all">Todas</button>
+      <button class="tab" data-filter="familia">Familia</button>
+      <button class="tab" data-filter="especialistas">Especialistas</button>
+      <button class="tab" data-filter="mente">Mente</button>
+      <button class="tab" data-filter="movimiento">Movimiento</button>
+      <button class="tab" data-filter="estetica">Sonrisa y estética</button>
+      <button class="tab" data-filter="tramites">Trámites</button>
+    </div>
+    <div class="spec-grid" id="spec-grid"></div>
+    <p class="spec-cta">¿No sabes a qué especialista ir? <a href="#oferta">Empieza por la Primera Visita 360</a> y te orientamos nosotros.</p>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section featured">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Lo más solicitado</span>
+      <h2>Tres motivos por los que nos eligen en Rivas</h2>
+    </div>
+    <div class="feat-grid">
+      <article class="feat reveal">
+        <div class="feat-img"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=70&auto=format&fit=crop" alt="Gabinete dental de Clínica Levante" loading="lazy"></div>
+        <div class="feat-body">
+          <span class="tagline">Clínica dental</span>
+          <h3>Implantes, ortodoncia y dentista infantil</h3>
+          <ul><li>Cirujanos expertos en implantes</li><li>Blanqueamiento, carillas y ortodoncia</li><li>Odontopediatría con trato especial para niños</li></ul>
+          <a href="#oferta" class="btn btn-ghost">Revisión dental incluida en la 360</a>
+        </div>
+      </article>
+      <article class="feat reveal">
+        <div class="feat-img"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&q=70&auto=format&fit=crop" alt="Fisioterapeuta de Clínica Levante" loading="lazy"></div>
+        <div class="feat-body">
+          <span class="tagline">Movimiento y lesiones</span>
+          <h3>Traumatología, fisio y medicina deportiva</h3>
+          <ul><li>Diagnóstico con ecografía en el propio centro</li><li>Rehabilitación coordinada con el traumatólogo</li><li>Medicina regenerativa para lesiones deportivas</li></ul>
+          <a href="#oferta" class="btn btn-ghost">Pedir valoración</a>
+        </div>
+      </article>
+      <article class="feat reveal">
+        <div class="feat-img"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=70&auto=format&fit=crop" alt="Médico de Clínica Levante" loading="lazy"></div>
+        <div class="feat-body">
+          <span class="tagline">Psicotécnicos</span>
+          <h3>Renueva el carnet hoy, sin cita previa larga</h3>
+          <ul><li>Centro acreditado por Sanidad y Tráfico</li><li>Nosotros hacemos el trámite con la DGT</li><li>También armas, PPP y náutica</li></ul>
+          <a href="tel:+34914994545" class="btn btn-ghost">Llamar y venir hoy</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PLAN FAMILIA -->
+<section class="section" id="plan-familia">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Plan Familia Levante</span>
+      <h2>Tu médico de cabecera privado, por menos de lo que cuesta un café al día</h2>
+      <p class="lead">Una cuota mensual fija, sin permanencia. Medicina general sin pagar por consulta, dentista incluido y descuentos en las 23 especialidades.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <h3>Individual</h3>
+        <p class="who">Para ti</p>
+        <div class="p"><b>19 €</b><span>/mes</span></div>
+        <p class="save">Ahorro medio: 240 €/año</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Medicina de familia sin coste por consulta</li>
+          <li><svg><use href="#i-check"/></svg>1 revisión y limpieza dental al año</li>
+          <li><svg><use href="#i-check"/></svg>15 % en todas las especialidades</li>
+          <li><svg><use href="#i-check"/></svg>Cita prioritaria en 24 h</li>
+        </ul>
+        <a href="#contacto" class="btn btn-ghost btn-block">Quiero el plan Individual</a>
+      </div>
+      <div class="plan best reveal">
+        <span class="badge">El más elegido</span>
+        <h3>Familia</h3>
+        <p class="who">Hasta 5 miembros</p>
+        <div class="p"><b>49 €</b><span>/mes</span></div>
+        <p class="save">Ahorro medio: 780 €/año</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Medicina de familia y pediatría sin coste por consulta</li>
+          <li><svg><use href="#i-check"/></svg>2 revisiones y limpiezas dentales al año por persona</li>
+          <li><svg><use href="#i-check"/></svg>20 % en todas las especialidades</li>
+          <li><svg><use href="#i-check"/></svg>Psicotécnico del carnet gratis</li>
+          <li><svg><use href="#i-check"/></svg>Cita prioritaria en 24 h y WhatsApp con enfermería</li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary btn-block">Quiero el plan Familia</a>
+      </div>
+      <div class="plan reveal">
+        <h3>Pareja</h3>
+        <p class="who">Para dos adultos</p>
+        <div class="p"><b>34 €</b><span>/mes</span></div>
+        <p class="save">Ahorro medio: 450 €/año</p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Medicina de familia sin coste por consulta</li>
+          <li><svg><use href="#i-check"/></svg>2 revisiones y limpiezas dentales al año por persona</li>
+          <li><svg><use href="#i-check"/></svg>15 % en todas las especialidades</li>
+          <li><svg><use href="#i-check"/></svg>Cita prioritaria en 24 h</li>
+        </ul>
+        <a href="#contacto" class="btn btn-ghost btn-block">Quiero el plan Pareja</a>
+      </div>
+    </div>
+    <p class="plans-note">Sin permanencia · Te das de baja cuando quieras · Compatible con tu seguro privado</p>
+  </div>
+</section>
+
+<!-- AUTHORITY -->
+<section class="section authority">
+  <div class="wrap auth-grid">
+    <div class="team reveal">
+      <figure><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=70&auto=format&fit=crop" alt="Doctora del equipo de Clínica Levante" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=70&auto=format&fit=crop" alt="Doctor del equipo de Clínica Levante" loading="lazy"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&q=70&auto=format&fit=crop" alt="Fisioterapeuta del equipo de Clínica Levante" loading="lazy"></figure>
+    </div>
+    <div>
+      <span class="eyebrow">Por qué confiar en nosotros</span>
+      <h2>Medicina seria, hecha por gente cercana</h2>
+      <div class="creds">
+        <div class="cred reveal"><span class="ic"><svg><use href="#i-shield"/></svg></span><div><b>Centro acreditado</b><p>Autorizado por la Consejería de Sanidad de la Comunidad de Madrid y por la DGT para reconocimientos de conductores.</p></div></div>
+        <div class="cred reveal"><span class="ic"><svg><use href="#i-flask"/></svg></span><div><b>Diagnóstico en el mismo centro</b><p>Laboratorio de análisis clínicos, ecografías y densitometrías propios. Resultados sin salir de Rivas.</p></div></div>
+        <div class="cred reveal"><span class="ic"><svg><use href="#i-award"/></svg></span><div><b>Investigación desde principios de siglo</b><p>Nuestro equipo de medicina regenerativa investiga con células madre desde los años 2000, junto al cirujano cardiovascular Federico Benetti.</p></div></div>
+      </div>
+      <blockquote class="doctor reveal">“Soy de los médicos que consideran que hay que estar al tanto de todos los avances y, después, decidir si aplicarlos o no.”<cite>Equipo de Medicina Regenerativa · Clínica Levante</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pacientes de Rivas</span>
+      <h2>Lo que dicen las familias que ya confían en nosotros</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Llevo a mis dos hijos al pediatra y al dentista en la misma mañana. Para mí, que trabajo, eso no tiene precio. Y el trato con los niños es buenísimo.”</p>
+        <div class="who"><span class="avatar">LM</span><div><b>Laura M.</b><small>Rivas Futura · Paciente desde 2019</small></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Fui por un dolor de rodilla y en vez de mandarme a casa con un antiinflamatorio, me vio el traumatólogo, me hicieron la ecografía allí y empecé fisio esa semana.”</p>
+        <div class="who"><span class="avatar">JR</span><div><b>Javier R.</b><small>Corredor popular · Paciente desde 2022</small></div></div>
+      </div>
+      <div class="testi reveal">
+        <div class="stars">★★★★★</div>
+        <p>“Renové el carnet en 20 minutos y se encargaron de todo con Tráfico. Ya me quedé para el resto de la familia.”</p>
+        <div class="who"><span class="avatar">CP</span><div><b>Carmen P.</b><small>Rivas Centro · Paciente desde 2021</small></div></div>
+      </div>
+    </div>
+    <p class="center"><a href="https://www.doctoralia.es/clinicas/multisalud-clinica-levante" target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:30px">★★★★★ 5,0 en Doctoralia · Ver las 41 opiniones</a><br><span class="demo-note">Opiniones de ejemplo para la maqueta · se sustituyen por reseñas reales de Google y Doctoralia</span></p>
+  </div>
+</section>
+
+<!-- INSURERS GRID -->
+<section class="section" id="seguros" style="background:var(--bg-soft)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Seguros privados</span>
+      <h2>¿Tienes seguro? Probablemente ya puedes venir</h2>
+      <p class="lead">Trabajamos con las principales aseguradoras. Si no ves la tuya, llámanos y lo comprobamos en un minuto.</p>
+    </div>
+    <div class="ins-grid" id="ins-grid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Qué incluye exactamente la Primera Visita 360?</summary><p>Una consulta completa de unos 45 minutos con médico de familia, revisión dental con diagnóstico, control básico (tensión, glucosa, peso) y un Plan de Salud por escrito con los siguientes pasos. Además, revisión dental gratis para tus hijos menores de 14 años si vienen contigo.</p></details>
+      <details><summary>¿Cómo funciona la garantía de cita en 48 h?</summary><p>Si reservas y no podemos darte cita en las 48 horas laborables siguientes, la Primera Visita 360 es gratis. Y si al terminar sientes que no te llevas un plan claro, te devolvemos los 39 €.</p></details>
+      <details><summary>¿Trabajáis con mi seguro médico?</summary><p>Trabajamos con Adeslas, Asisa, DKV, Mapfre, AXA, Allianz, Caser, Cigna y otras aseguradoras. Llámanos al 91 499 45 45 y te confirmamos qué especialidades cubre tu póliza.</p></details>
+      <details><summary>¿El Plan Familia tiene permanencia?</summary><p>No. Pagas una cuota mensual y te puedes dar de baja cuando quieras. Es compatible con tener un seguro privado.</p></details>
+      <details><summary>¿Atendéis a niños?</summary><p>Sí. Tenemos pediatría, odontopediatría, psicología infantil y logopedia, con profesionales con experiencia en niños, incluidos niños con necesidades especiales.</p></details>
+      <details><summary>¿Cuál es vuestro horario?</summary><p>De lunes a viernes de 9:00 a 21:00 y sábados de 9:00 a 14:00. Puedes reservar online a cualquier hora, también por la noche y en fin de semana.</p></details>
+      <details><summary>¿Dónde estáis y hay aparcamiento?</summary><p>En la Calle Antonio Muñoz Molina, 1, 28521 Rivas-Vaciamadrid. Te indicamos cómo llegar y dónde aparcar al confirmar tu cita.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA + CONTACT -->
+<section id="contacto">
+  <div class="wrap">
+    <div class="final reveal">
+      <div>
+        <h2>Deja de posponer tu salud. Empieza esta semana.</h2>
+        <p>Quedan 8 plazas de la Primera Visita 360 a 39 € este mes. Reserva en 30 segundos o llámanos.</p>
+      </div>
+      <div class="actions">
+        <a href="#oferta" class="btn btn-primary"><svg><use href="#i-cal"/></svg>Reservar mi plaza</a>
+        <a href="tel:+34914994545" class="btn btn-ghost"><svg><use href="#i-phone"/></svg>91 499 45 45</a>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a class="ci" href="tel:+34914994545"><span class="ic"><svg><use href="#i-phone"/></svg></span><div><small>Teléfono</small><b>91 499 45 45 · 91 499 45 89</b></div></a>
+        <a class="ci" href="mailto:info@grupomultisalud.es"><span class="ic"><svg><use href="#i-mail"/></svg></span><div><small>Email</small><b>info@grupomultisalud.es</b></div></a>
+        <a class="ci" href="https://maps.google.com/?q=Calle+Antonio+Muñoz+Molina+1+Rivas-Vaciamadrid" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-pin"/></svg></span><div><small>Dirección</small><b>C/ Antonio Muñoz Molina, 1 · 28521 Rivas-Vaciamadrid</b></div></a>
+        <div class="hours" id="horario">
+          <div class="hours-head"><span class="ic"><svg><use href="#i-clock"/></svg></span><div><small>Horario</small><b class="open-status" data-status></b></div></div>
+          <ul id="hours-list"></ul>
+          <a href="#oferta" class="btn btn-primary btn-block" style="margin-top:14px">Reservar cita online 24 h</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Mapa Clínica Levante Rivas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Calle+Antonio+Mu%C3%B1oz+Molina+1,+28521+Rivas-Vaciamadrid&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><span class="logo-text"><b>Clínica Levante</b></span></a>
+        <p style="margin-top:16px;max-width:320px">Centro médico privado en Rivas-Vaciamadrid. 23 especialidades coordinadas para toda la familia. Grupo Multisalud.</p>
+      </div>
+      <div><h4>Especialidades</h4><ul><li><a href="#especialidades">Odontología</a></li><li><a href="#especialidades">Pediatría</a></li><li><a href="#especialidades">Psicología</a></li><li><a href="#especialidades">Traumatología</a></li><li><a href="#especialidades">Ginecología</a></li></ul></div>
+      <div><h4>Clínica</h4><ul><li><a href="#metodo">Método 360</a></li><li><a href="#plan-familia">Plan Familia</a></li><li><a href="#seguros">Seguros</a></li><li><a href="https://clinicalevanterivas.com/blog/">Blog de salud</a></li></ul></div>
+      <div><h4>Contacto</h4><ul><li><a href="tel:+34914994545">91 499 45 45</a></li><li><a href="tel:+34914994589">91 499 45 89</a></li><li><a href="mailto:info@grupomultisalud.es">info@grupomultisalud.es</a></li></ul></div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 Clínica Levante · Multisalud Rivas 2000, S.L. · Nº Registro Sanitario: [pendiente]</span>
+      <span><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/34914994545?text=Hola,%20quiero%20reservar%20la%20Primera%20Visita%20360" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<div class="mbar">
+  <a href="tel:+34914994545" class="btn btn-ghost"><svg><use href="#i-phone"/></svg>Llamar</a>
+  <a href="#oferta" class="btn btn-primary">Cita por 39 €</a>
+</div>
+
+<script>
+// Specialties data
+const SPECS = [
+  ["familia","Medicina familiar","Tu médico de cabecera privado, sin esperas.","i-steth"],
+  ["familia","Pediatría","Seguimiento del niño sano y urgencias del día.","i-baby"],
+  ["familia","Enfermería","Curas, vacunas, inyectables y analíticas.","i-heart"],
+  ["familia","Laboratorio de análisis","Analíticas en el propio centro.","i-flask"],
+  ["familia","Alergología","Pruebas de alergia para niños y adultos.","i-spark"],
+  ["familia","Dietética y nutrición","Planes de alimentación personalizados.","i-heart"],
+  ["especialistas","Cardiología","Revisiones, electrocardiograma y control.","i-heart"],
+  ["especialistas","Neurología","Migrañas, mareos, memoria y sueño.","i-brain"],
+  ["especialistas","Ginecología y obstetricia","Revisiones, embarazo y menopausia.","i-users"],
+  ["especialistas","Otorrinolaringología","Oído, nariz, garganta y audición.","i-steth"],
+  ["especialistas","Dermatología","Lunares, acné y piel de toda la familia.","i-spark"],
+  ["especialistas","Traumatología","Huesos, articulaciones y lesiones.","i-bone"],
+  ["especialistas","Radiodiagnóstico","Ecografías y densitometrías en el centro.","i-flask"],
+  ["mente","Psicología","Adultos, pareja, niños y adolescentes.","i-brain"],
+  ["mente","Psiquiatría","Ansiedad, depresión y salud mental.","i-brain"],
+  ["mente","Logopedia","Habla, lenguaje y deglución.","i-users"],
+  ["movimiento","Fisioterapia","Dolor de espalda, lesiones y rehabilitación.","i-bone"],
+  ["movimiento","Medicina del deporte","Rehabilitación y rendimiento deportivo.","i-heart"],
+  ["movimiento","Medicina regenerativa","Terapias avanzadas para lesiones.","i-flask"],
+  ["estetica","Odontología","Implantes, ortodoncia y estética dental.","i-tooth"],
+  ["estetica","Medicina estética","Tratamientos faciales médicos.","i-spark"],
+  ["estetica","Depilación láser médico","Supervisada por médico.","i-spark"],
+  ["tramites","Psicotécnicos","Carnet de conducir, armas, PPP y náutica.","i-car"]
+];
+const grid = document.getElementById('spec-grid');
+grid.innerHTML = SPECS.map(([cat,t,d,ic]) =>
+  `<div class="spec" data-cat="${cat}"><span class="ic"><svg><use href="#${ic}"/></svg></span><h3>${t}</h3><p>${d}</p></div>`).join('');
+document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  tab.classList.add('active');
+  const f = tab.dataset.filter;
+  grid.querySelectorAll('.spec').forEach(s => s.classList.toggle('hidden', f !== 'all' && s.dataset.cat !== f));
+}));
+
+// Insurers (logos from the current site)
+const BASE = 'https://clinicalevanterivas.com/wp-content/uploads/2019/03/';
+const INS = [["adelaslas-ok.jpg","Adeslas"],["asisaook.jpg","Asisa"],["dkv-ok.jpg","DKV"],["mapfre-ok.jpg","Mapfre"],["axa-ok.jpg","AXA"],["allianz-ok.jpg","Allianz"],["caser-ok.jpg","Caser"],["cigna-ok.jpg","Cigna"],["aegon.jpg","Aegon"],["santa-lucia-ok.jpg","Santalucía"],["fiat-ok.jpg","FIATC"],["hna-ok.jpg","HNA"],["divinapastora.jpg","Divina Pastora"],["asefa-ok.jpg","Asefa"],["agrupacio-ok.jpg","Agrupació"],["afemefa-ok.jpg","Afemefa"],["antares.jpg","Antares"]];
+const logo = ([f,n]) => `<img src="${BASE}${f}" alt="${n}" loading="lazy">`;
+document.getElementById('ins-grid').innerHTML = INS.map(i => `<div>${logo(i)}</div>`).join('');
+document.getElementById('marquee').innerHTML = INS.map(logo).join('') + INS.map(logo).join('');
+
+// Header shadow
+const header = document.querySelector('header.site');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 10), {passive:true});
+
+// Mobile menu
+const mm = document.getElementById('mmenu');
+document.getElementById('burger').onclick = () => mm.classList.add('open');
+document.getElementById('mclose').onclick = () => mm.classList.remove('open');
+mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.remove('open')));
+
+// Reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Opening hours: edit here only. Day 0 = Sunday. Times as "HH:MM".
+const HOURS = {
+  1: [["09:00","21:00"]],
+  2: [["09:00","21:00"]],
+  3: [["09:00","21:00"]],
+  4: [["09:00","21:00"]],
+  5: [["09:00","21:00"]],
+  6: [["09:00","14:00"]],
+  0: []
+};
+const SLOT_MIN = 30;        // length of each online slot
+const LEAD_MIN = 120;       // earliest bookable slot today: now + 2 h
+const DAYS = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+const toMin = s => { const [h,m] = s.split(':').map(Number); return h*60+m; };
+const fmt = m => String(Math.floor(m/60)).padStart(2,'0') + ':' + String(m%60).padStart(2,'0');
+const nowMin = d => d.getHours()*60 + d.getMinutes();
+
+// Hours table + live open/closed status
+(function renderHours(){
+  const now = new Date(), today = now.getDay();
+  const order = [1,2,3,4,5,6,0];
+  document.getElementById('hours-list').innerHTML = order.map(d => {
+    const r = HOURS[d];
+    const txt = r.length ? r.map(([a,b]) => `${a} – ${b}`).join(' · ') : 'Cerrado';
+    return `<li class="${d===today?'today':''} ${r.length?'':'closed'}"><span>${DAYS[d]}${d===today?' (hoy)':''}</span><span>${txt}</span></li>`;
+  }).join('');
+
+  const t = nowMin(now);
+  const openRange = HOURS[today].find(([a,b]) => t >= toMin(a) && t < toMin(b));
+  let label, open = !!openRange;
+  if (open) label = `Abierto ahora · hasta las ${openRange[1]}`;
+  else {
+    const laterToday = HOURS[today].find(([a]) => toMin(a) > t);
+    if (laterToday) label = `Cerrado · abre hoy a las ${laterToday[0]}`;
+    else {
+      for (let i = 1; i <= 7; i++) {
+        const d = (today + i) % 7;
+        if (HOURS[d].length) { label = `Cerrado · abre ${i===1?'mañana':DAYS[d].toLowerCase()} a las ${HOURS[d][0][0]}`; break; }
+      }
+    }
+  }
+  document.querySelectorAll('[data-status]').forEach(el => {
+    el.textContent = label;
+    el.classList.add(open ? 'is-open' : 'is-closed');
+  });
+})();
+
+// Online booking: day + time picker
+const dayBox = document.getElementById('day-chips');
+const slotBox = document.getElementById('slot-chips');
+const citaInput = document.getElementById('f-cita');
+let pickedDay = null, pickedSlot = null;
+
+function slotsFor(date){
+  const isToday = date.toDateString() === new Date().toDateString();
+  const min = isToday ? nowMin(new Date()) + LEAD_MIN : 0;
+  const out = [];
+  HOURS[date.getDay()].forEach(([a,b]) => {
+    for (let m = toMin(a); m + SLOT_MIN <= toMin(b); m += SLOT_MIN) if (m >= min) out.push(m);
+  });
+  return out;
+}
+function bookableDays(n){
+  const res = [], d = new Date();
+  d.setHours(0,0,0,0);
+  for (let i = 0; res.length < n && i < 21; i++) {
+    const day = new Date(d); day.setDate(d.getDate() + i);
+    if (slotsFor(day).length) res.push(day);
+  }
+  return res;
+}
+function pick(box, btn){
+  box.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-checked','false'));
+  btn.setAttribute('aria-checked','true');
+}
+function renderSlots(){
+  pickedSlot = null; citaInput.value = '';
+  const s = slotsFor(pickedDay);
+  slotBox.innerHTML = s.map(m => `<button type="button" class="chip" role="radio" aria-checked="false" data-m="${m}">${fmt(m)}</button>`).join('');
+}
+const days = bookableDays(6);
+const todayStr = new Date().toDateString();
+const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate()+1);
+dayBox.innerHTML = days.map((d,i) => {
+  const name = d.toDateString()===todayStr ? 'Hoy' : d.toDateString()===tomorrow.toDateString() ? 'Mañana' : DAYS[d.getDay()].slice(0,3);
+  const date = d.toLocaleDateString('es-ES',{day:'numeric',month:'short'});
+  return `<button type="button" class="chip" role="radio" aria-checked="false" data-i="${i}">${name}<small>${date}</small></button>`;
+}).join('');
+dayBox.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  pick(dayBox, b); pickedDay = days[+b.dataset.i]; renderSlots();
+});
+slotBox.addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  pick(slotBox, b); pickedSlot = +b.dataset.m;
+  const d = pickedDay.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'});
+  citaInput.value = `${d} a las ${fmt(pickedSlot)}`;
+});
+if (days.length) dayBox.querySelector('.chip').click();
+
+// Lead form (demo: connect to email/CRM/agenda in production)
+document.getElementById('lead-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  if (!f.checkValidity()) { f.reportValidity(); return; }
+  if (!citaInput.value) { slotBox.scrollIntoView({block:'center',behavior:'smooth'}); slotBox.animate([{outline:'2px solid #e8694a'},{outline:'2px solid transparent'}],{duration:1200}); return; }
+  document.getElementById('ok-when').textContent = citaInput.value;
+  document.getElementById('form-wrap').style.display = 'none';
+  document.getElementById('form-ok').style.display = 'block';
+});
+</script>
+</body>
+</html>

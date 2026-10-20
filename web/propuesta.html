@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta Web Clínica Levante</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0d2b33;--ink-2:#38545b;--muted:#6b8288;--line:#dde8e6;--soft:#f3f8f7;--warm:#fbf6ef;--teal:#0f5c63;--teal-soft:#e3f1ef;--accent:#e8694a;--bad:#c2412d;--bad-soft:#fcebe7;--ok:#1f8a5b;--ok-soft:#e1f4ea;--serif:"Fraunces",Georgia,serif;--sans:"Plus Jakarta Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:14px}
+h3{font-size:21px}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);display:block;margin-bottom:12px}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+.lead{font-size:19px;color:var(--ink-2);max-width:720px}
+a{color:var(--teal)}
+
+.cover{background:linear-gradient(160deg,#0b3d43,#0d2b33 65%);color:#e7f2f0;padding:90px 0 80px;border:0}
+.cover .eyebrow{color:#7fd1c8}
+.cover h1{font-size:clamp(38px,5.4vw,62px);color:#fff;margin-bottom:22px}
+.cover h1 em{color:#ffb39f}
+.cover .lead{color:#b9d4d1}
+.meta{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:38px;font-size:15px;color:#9fbebb}
+.meta b{color:#fff;display:block;font-size:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;font-weight:700;padding:16px 26px;border-radius:999px;text-decoration:none;margin-top:34px}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.35);margin-left:10px}
+
+.issues{display:grid;gap:14px;margin-top:34px}
+.issue{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 22px;border:1px solid #f3d6cf;background:#fff;border-radius:16px}
+.issue .x{width:44px;height:44px;border-radius:12px;background:var(--bad-soft);color:var(--bad);display:grid;place-items:center;font-weight:800;font-size:20px}
+.issue b{display:block;font-size:17px;margin-bottom:2px}
+.issue p{color:var(--ink-2);font-size:15.5px}
+.sev{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-left:8px;vertical-align:2px}
+.sev.h{background:var(--bad-soft);color:var(--bad)}
+.sev.m{background:#fdf2dc;color:#9a6c1c}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.col{border-radius:20px;padding:28px}
+.col.before{background:var(--bad-soft)}
+.col.after{background:var(--ok-soft)}
+.col h3{margin-bottom:14px}
+.col ul{list-style:none;display:grid;gap:10px;font-size:15.5px}
+.col li{display:flex;gap:10px}
+.before li::before{content:"✕";color:var(--bad);font-weight:800}
+.after li::before{content:"✓";color:var(--ok);font-weight:800}
+
+.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+.pillar{border:1px solid var(--line);border-radius:20px;padding:26px}
+.pillar .n{font-family:var(--serif);color:var(--accent);font-size:15px;font-weight:600}
+.pillar h3{margin:6px 0 8px}
+.pillar p{color:var(--ink-2);font-size:15.5px}
+.pillar .why{margin-top:12px;font-size:14.5px;background:var(--soft);padding:12px 14px;border-radius:12px;color:var(--ink-2)}
+
+.calc{margin-top:34px;border:1px solid var(--line);border-radius:22px;overflow:hidden}
+.calc-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.calc-in label{background:#fff;padding:16px 18px;font-size:13.5px;font-weight:700;color:var(--ink-2);display:flex;flex-direction:column;gap:8px}
+.calc-in input{font:inherit;font-size:20px;font-weight:700;color:var(--ink);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;width:100%}
+.calc-in input:focus{outline:none;border-color:var(--teal)}
+.calc-out{display:grid;grid-template-columns:repeat(3,1fr);background:var(--soft)}
+.calc-out div{padding:24px 20px;border-right:1px solid var(--line)}
+.calc-out div:last-child{border-right:0;background:var(--teal);color:#fff}
+.calc-out small{display:block;font-size:13.5px;font-weight:700;color:var(--muted)}
+.calc-out div:last-child small{color:#bfe3df}
+.calc-out b{font-family:var(--serif);font-size:34px;line-height:1.2}
+.note{font-size:14px;color:var(--muted);margin-top:14px}
+.payback{margin-top:24px;padding:22px 24px;border-radius:18px;background:var(--warm);font-size:17px}
+.payback b{color:var(--teal)}
+
+.incl{display:grid;grid-template-columns:1fr 1fr;gap:10px 30px;margin-top:30px;list-style:none}
+.incl li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.incl li::before{content:"✓";color:var(--ok);font-weight:800}
+.incl li b{display:block}
+.incl li span{color:var(--muted);font-size:14.5px}
+
+.price-box{margin-top:40px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;border:2px solid var(--teal);border-radius:24px;padding:32px 34px}
+.price-box .big{font-family:var(--serif);font-size:56px;line-height:1;color:var(--teal)}
+.price-box p{color:var(--ink-2);font-size:15.5px;margin-top:6px}
+
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.tl{background:var(--soft);border-radius:16px;padding:20px}
+.tl b{font-family:var(--serif);font-size:15px;color:var(--accent)}
+.tl h3{font-size:18px;margin:4px 0 6px}
+.tl p{font-size:14.5px;color:var(--ink-2)}
+
+.final{background:var(--warm);border:0;text-align:center}
+.final .btn{margin-top:26px}
+
+@media (max-width:760px){
+  section{padding:60px 0}
+  .wrap{padding:0 16px}
+  .compare,.pillars,.incl,.timeline,.price-box{grid-template-columns:1fr}
+  .calc-in{grid-template-columns:1fr 1fr}
+  .calc-out{grid-template-columns:1fr}
+  .calc-out div{border-right:0;border-bottom:1px solid var(--line)}
+  .btn.ghost{margin-left:0}
+}
+@media print{.btn{display:none}section{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="wrap">
+    <span class="eyebrow">Propuesta de crecimiento digital</span>
+    <h1>Una web que no solo informa:<br><em>llena la agenda</em> de Clínica Levante.</h1>
+    <p class="lead">Hoy su web es un folleto de 2014. Le proponemos convertirla en el comercial que más pacientes le trae: con una oferta clara, autoridad médica y un sistema de ingresos recurrentes.</p>
+    <div class="meta">
+      <div><b>Cliente</b>Clínica Levante · Grupo Multisalud</div>
+      <div><b>Preparado por</b>[Tu nombre / agencia]</div>
+      <div><b>Fecha</b>Octubre 2026</div>
+    </div>
+    <a class="btn" href="index.html">Ver la nueva web →</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">1 · Diagnóstico</span>
+    <h2>Lo que hoy le está costando pacientes</h2>
+    <p class="lead">Hemos revisado clinicalevanterivas.com página por página. Estos son los puntos que frenan las reservas:</p>
+    <div class="issues">
+      <div class="issue"><span class="x">!</span><div><b>La página de inicio está vacía <span class="sev h">Crítico</span></b><p>Quien entra no ve ni qué hacen, ni por qué elegirles, ni un botón claro para pedir cita. La mayoría se va en segundos a la competencia.</p></div></div>
+      <div class="issue"><span class="x">!</span><div><b>La web muestra anuncios de Google AdSense <span class="sev h">Crítico</span></b><p>Hay un código de anuncios instalado. En una web médica eso resta seriedad y puede mostrar publicidad de otras clínicas a sus propios pacientes.</p></div></div>
+      <div class="issue"><span class="x">!</span><div><b>Riesgo legal en la página de células madre <span class="sev h">Crítico</span></b><p>Menciona la terapia como indicada para diabetes, Parkinson, demencia o lupus. La normativa de publicidad sanitaria (RD 1907/1996) prohíbe atribuir efectos que no estén probados. Conviene reescribirla.</p></div></div>
+      <div class="issue"><span class="x">!</span><div><b>No hay ningún motivo para llamar hoy <span class="sev m">Alto</span></b><p>Sin oferta de primera visita, sin garantía, sin precio de referencia. El paciente compara solo por cercanía o por precio.</p></div></div>
+      <div class="issue"><span class="x">!</span><div><b>Cero prueba de confianza <span class="sev m">Alto</span></b><p>Ni reseñas, ni equipo, ni acreditaciones visibles. Tienen 23 especialidades y 17 aseguradoras, pero no lo cuentan.</p></div></div>
+      <div class="issue"><span class="x">!</span><div><b>Diseño antiguo y poco pensado para móvil <span class="sev m">Alto</span></b><p>Plantilla de 2014, sin botón de llamada fija, sin WhatsApp y sin número de registro sanitario visible, que es obligatorio.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <span class="eyebrow">2 · Antes y después</span>
+    <h2>De folleto informativo a máquina de citas</h2>
+    <div class="compare">
+      <div class="col before">
+        <h3>Web actual</h3>
+        <ul>
+          <li>Inicio sin contenido ni llamada a la acción</li>
+          <li>Lista de servicios sin orden ni motivo para elegir</li>
+          <li>Anuncios de terceros</li>
+          <li>Ninguna oferta ni garantía</li>
+          <li>Todo depende de que el paciente llame por su cuenta</li>
+          <li>Ingresos solo por consulta suelta</li>
+        </ul>
+      </div>
+      <div class="col after">
+        <h3>Nueva web</h3>
+        <ul>
+          <li>Promesa clara en 5 segundos: “toda la salud de tu familia en una clínica”</li>
+          <li>Oferta de entrada a 39 € con doble garantía</li>
+          <li>Reserva en 30 segundos, WhatsApp y botón de llamada fijos en móvil</li>
+          <li>Autoridad: acreditaciones, equipo, 17 aseguradoras y reseñas</li>
+          <li>23 especialidades ordenadas por necesidad del paciente</li>
+          <li>Plan Familia: ingresos mensuales recurrentes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">3 · La estrategia</span>
+    <h2>Cuatro piezas que trabajan juntas</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="n">01 · Promesa</span>
+        <h3>“Un equipo. Un plan. Una sola clínica.”</h3>
+        <p>Su ventaja real frente a una clínica dental o un fisio de barrio es que lo tienen todo y lo coordinan, por ejemplo el bruxismo entre dentista, fisio y psicólogo. Lo convertimos en el Método Levante 360.</p>
+        <div class="why">Por qué funciona: el paciente deja de comparar precios de consulta y empieza a comparar comodidad y resultado.</div>
+      </div>
+      <div class="pillar">
+        <span class="n">02 · Oferta irresistible</span>
+        <h3>Primera Visita 360 por 39 €</h3>
+        <p>Consulta de medicina de familia, revisión dental, control básico y plan escrito (valor 210 €). Regalo: revisión dental gratis para los hijos. Doble garantía: cita en 48 h o es gratis, y devolución si no sale con un plan claro.</p>
+        <div class="why">Por qué funciona: la revisión dental y el plan generan tratamientos. Los 39 € no son el negocio, son la puerta de entrada.</div>
+      </div>
+      <div class="pillar">
+        <span class="n">03 · Ingresos recurrentes</span>
+        <h3>Plan Familia Levante desde 19 €/mes</h3>
+        <p>Una cuota mensual con medicina general sin pago por consulta, limpiezas dentales y descuentos en especialidades. Sin permanencia.</p>
+        <div class="why">Por qué funciona: cada familia suscrita paga cada mes, vuelve más a menudo y consume más especialidades.</div>
+      </div>
+      <div class="pillar">
+        <span class="n">04 · Autoridad</span>
+        <h3>Demostrar lo que ya son</h3>
+        <p>Acreditación de Sanidad y DGT, laboratorio y radiología propios, investigación en medicina regenerativa desde los 2000, equipo con nombre y foto y reseñas reales de Google.</p>
+        <div class="why">Por qué funciona: en salud, la confianza decide antes que el precio.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--soft)">
+  <div class="wrap">
+    <span class="eyebrow">4 · Retorno estimado</span>
+    <h2>Los números, con sus propios datos</h2>
+    <p class="lead">Cambie las cifras por las reales de la clínica. El cálculo se actualiza solo.</p>
+    <div class="calc">
+      <div class="calc-in">
+        <label>Primeras Visitas 360 al mes<input type="number" id="c-v" value="30" min="0"></label>
+        <label>% que inicia un tratamiento<input type="number" id="c-p" value="40" min="0" max="100"></label>
+        <label>Ticket medio del tratamiento (€)<input type="number" id="c-t" value="300" min="0"></label>
+        <label>Altas de Plan Familia al mes<input type="number" id="c-f" value="10" min="0"></label>
+      </div>
+      <div class="calc-out">
+        <div><small>Ingresos extra al mes (desde el mes 1)</small><b id="o-m">—</b></div>
+        <div><small>Cuotas del Plan Familia en el mes 12</small><b id="o-r">—</b></div>
+        <div><small>Ingresos extra en el primer año</small><b id="o-y">—</b></div>
+      </div>
+    </div>
+    <p class="note">Estimación orientativa, no garantizada. Supone un precio medio de 49 €/mes en el Plan Familia y que nadie se da de baja. Los resultados reales dependen de la captación (Google, redes, boca a boca) y de la atención telefónica.</p>
+    <div class="payback" id="payback"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">5 · Qué incluye</span>
+    <h2>Todo lo necesario para que la web venda</h2>
+    <ul class="incl">
+      <li><div><b>Diseño y desarrollo a medida</b><span>Rápida, pensada primero para móvil y fácil de editar</span></div></li>
+      <li><div><b>Textos de venta profesionales</b><span>Promesa, oferta, garantías y preguntas frecuentes</span></div></li>
+      <li><div><b>Diseño de la oferta y del Plan Familia</b><span>Precios, condiciones y guion para recepción</span></div></li>
+      <li><div><b>23 páginas de especialidad</b><span>Optimizadas para aparecer en Google como “… en Rivas”</span></div></li>
+      <li><div><b>Reservas por formulario y WhatsApp</b><span>Avisos al instante por email y al móvil de recepción</span></div></li>
+      <li><div><b>Ficha de Google Business optimizada</b><span>Más visibilidad en Google Maps</span></div></li>
+      <li><div><b>Sistema para conseguir reseñas</b><span>Mensaje automático tras cada visita</span></div></li>
+      <li><div><b>Revisión de publicidad sanitaria</b><span>Textos ajustados a la normativa y registro sanitario visible</span></div></li>
+      <li><div><b>Medición de resultados</b><span>Cuántas citas llegan desde la web, cada mes</span></div></li>
+      <li><div><b>Migración, seguridad y 30 días de soporte</b><span>Sin anuncios de terceros y sin perder posiciones en Google</span></div></li>
+    </ul>
+
+    <div class="price-box">
+      <div>
+        <h3>Inversión total</h3>
+        <p>Pago único. 50 % al iniciar y 50 % en la entrega. Se recupera con unos 17 tratamientos de 300 €.</p>
+      </div>
+      <div class="big">5.000 €</div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl"><b>Semana 1</b><h3>Estrategia</h3><p>Reunión, fotos del equipo y del centro, condiciones de la oferta.</p></div>
+      <div class="tl"><b>Semana 2</b><h3>Diseño y textos</h3><p>Inicio y oferta aprobados por la clínica.</p></div>
+      <div class="tl"><b>Semana 3</b><h3>Desarrollo</h3><p>Especialidades, formularios, WhatsApp y Google.</p></div>
+      <div class="tl"><b>Semana 4</b><h3>Lanzamiento</h3><p>Publicación, formación a recepción y medición.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow">Siguiente paso</span>
+    <h2>Su agenda puede empezar a llenarse antes de Navidad</h2>
+    <p class="lead" style="margin:0 auto">Si damos el visto bueno esta semana, la nueva web y la Primera Visita 360 estarán funcionando antes de Navidad, la época con más revisiones y propósitos de salud.</p>
+    <a class="btn" href="index.html">Ver la nueva web →</a>
+  </div>
+</section>
+
+<script>
+const eur = n => Math.round(n).toLocaleString('de-DE') + ' €';
+function calc(){
+  const v=+document.getElementById('c-v').value||0, p=(+document.getElementById('c-p').value||0)/100,
+        t=+document.getElementById('c-t').value||0, f=+document.getElementById('c-f').value||0, plan=49;
+  const monthly = v*39 + v*p*t;          // visitas + tratamientos
+  const recurring12 = f*12*plan;          // cuotas en el mes 12
+  const yearPlan = f*plan*78;             // suma meses 1..12 (1+2+...+12 = 78)
+  const year = monthly*12 + yearPlan;
+  document.getElementById('o-m').textContent = eur(monthly);
+  document.getElementById('o-r').textContent = eur(recurring12) + '/mes';
+  document.getElementById('o-y').textContent = eur(year);
+  const months = monthly>0 ? (5000/monthly) : 0;
+  document.getElementById('payback').innerHTML = monthly>0
+    ? `Con estas cifras, la inversión de <b>5.000 €</b> se recupera en <b>${months<1?'menos de 1 mes':months.toFixed(1).replace('.',',')+' meses'}</b>, y el primer año supone <b>${(year/5000).toFixed(0)} veces</b> lo invertido.`
+    : 'Introduzca sus cifras para ver el retorno.';
+}
+document.querySelectorAll('.calc input').forEach(i=>i.addEventListener('input',calc));
+calc();
+</script>
+</body>
+</html>
